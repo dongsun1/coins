@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet';
 import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
-import { useSetRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
 import styled from 'styled-components';
 import { fetchCoins } from './api';
 import { isDarkAtom } from './atoms';
@@ -17,6 +17,7 @@ const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
 
 const CoinList = styled.ul``;
@@ -67,12 +68,37 @@ const Img = styled.img`
   margin-right: 10px;
 `;
 
+const Button = styled.button`
+  position: absolute;
+  right: 0;
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+  background-color: #eae0c2;
+  border-radius: 15px;
+  border: 2px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  color: #505739;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  &:hover {
+    background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+    background-color: #ccc2a6;
+  }
+`;
+
 interface ICoinsProps {}
 
 function Coins() {
   const { isLoading, data } = useQuery<ICoin[]>('allCoins', fetchCoins);
   const setDarkAtom = useSetRecoilState(isDarkAtom);
   const toggleDarkAtom = () => setDarkAtom((prev) => !prev);
+  console.log(setDarkAtom);
+
   return (
     <Container>
       <Helmet>
@@ -80,7 +106,9 @@ function Coins() {
       </Helmet>
       <Header>
         <Title>코인</Title>
-        <button onClick={toggleDarkAtom}>Toggle Dark Mode</button>
+        <Button onClick={toggleDarkAtom}>
+          {useRecoilValue(isDarkAtom) ? 'Light' : 'Dark'} Mode
+        </Button>
       </Header>
       {isLoading ? (
         <Loader>Loading...</Loader>
