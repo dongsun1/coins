@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/coins/static/js/main.d0207e29.chunk.js",
-    "main.js.map": "/coins/static/js/main.d0207e29.chunk.js.map",
-    "runtime-main.js": "/coins/static/js/runtime-main.d83742c8.js",
-    "runtime-main.js.map": "/coins/static/js/runtime-main.d83742c8.js.map",
-    "static/js/2.b2b4db94.chunk.js": "/coins/static/js/2.b2b4db94.chunk.js",
-    "static/js/2.b2b4db94.chunk.js.map": "/coins/static/js/2.b2b4db94.chunk.js.map",
-    "index.html": "/coins/index.html",
-    "static/js/2.b2b4db94.chunk.js.LICENSE.txt": "/coins/static/js/2.b2b4db94.chunk.js.LICENSE.txt"
+    "main.js": "/cyptotracker/static/js/main.23890cd3.chunk.js",
+    "main.js.map": "/cyptotracker/static/js/main.23890cd3.chunk.js.map",
+    "runtime-main.js": "/cyptotracker/static/js/runtime-main.f6df23bc.js",
+    "runtime-main.js.map": "/cyptotracker/static/js/runtime-main.f6df23bc.js.map",
+    "static/js/2.0a55aa80.chunk.js": "/cyptotracker/static/js/2.0a55aa80.chunk.js",
+    "static/js/2.0a55aa80.chunk.js.map": "/cyptotracker/static/js/2.0a55aa80.chunk.js.map",
+    "index.html": "/cyptotracker/index.html",
+    "static/js/2.0a55aa80.chunk.js.LICENSE.txt": "/cyptotracker/static/js/2.0a55aa80.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d83742c8.js",
-    "static/js/2.b2b4db94.chunk.js",
-    "static/js/main.d0207e29.chunk.js"
+    "static/js/runtime-main.f6df23bc.js",
+    "static/js/2.0a55aa80.chunk.js",
+    "static/js/main.23890cd3.chunk.js"
   ]
 }
