@@ -14,7 +14,6 @@ ReactDOM.render(
       </QueryClientProvider>
     </RecoilRoot>
   </React.StrictMode>,
-
   document.getElementById('root')
 );
 
