@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/cyptotracker/static/js/main.23890cd3.chunk.js",
-    "main.js.map": "/cyptotracker/static/js/main.23890cd3.chunk.js.map",
+    "main.js": "/cyptotracker/static/js/main.aa64f9fd.chunk.js",
+    "main.js.map": "/cyptotracker/static/js/main.aa64f9fd.chunk.js.map",
     "runtime-main.js": "/cyptotracker/static/js/runtime-main.f6df23bc.js",
     "runtime-main.js.map": "/cyptotracker/static/js/runtime-main.f6df23bc.js.map",
     "static/js/2.0a55aa80.chunk.js": "/cyptotracker/static/js/2.0a55aa80.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.f6df23bc.js",
     "static/js/2.0a55aa80.chunk.js",
-    "static/js/main.23890cd3.chunk.js"
+    "static/js/main.aa64f9fd.chunk.js"
   ]
 }
